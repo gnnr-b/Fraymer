@@ -1,0 +1,20 @@
+:root{
+  --bg: #f7f9fc;
+  --panel: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#0f172a}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:transparent}
+header h1{margin:0;font-size:18px}
+.controls button{margin-left:8px;padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:18px}
+.panel{background:var(--panel);padding:14px;border-radius:8px;box-shadow:0 1px 2px rgba(16,24,40,0.04)}
+.panel h2{margin:0 0 8px 0;font-size:14px}
+textarea{width:100%;height:160px;padding:10px;border-radius:6px;border:1px solid #e6e9ef;resize:vertical;font-family:inherit}
+.panel-actions{margin-top:8px}
+.panel-actions button{padding:8px 12px;border-radius:6px;border:none;background:var(--accent);color:#fff}
+.result{margin-top:12px}
+.status{font-size:13px;color:var(--muted);margin-bottom:8px}
+.output-text{background:#0b1220;color:#e6eef8;padding:12px;border-radius:6px;min-height:80px;white-space:pre-wrap}
+.output-json{background:#f3f4f6;color:#0b1220;padding:12px;border-radius:6px;min-height:80px;overflow:auto;margin-top:8px}

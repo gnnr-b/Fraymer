@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prompt Compare — Prompt Testing Bench</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Prompt Compare</h1>
+      <div class="controls">
+        <button id="runBoth">Run Both</button>
+        <button id="clearAll">Clear</button>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <h2>Prompt A</h2>
+        <select id="a_model">
+          <option>gpt-4o-mini</option>
+          <option selected>gpt-3.5-turbo</option>
+          <option>gpt-4o</option>
+        </select>
+        <textarea id="a_prompt" placeholder="Enter prompt A"></textarea>
+        <div class="panel-actions">
+          <button id="runA">Run A</button>
+        </div>
+        <div class="result">
+          <div class="status">Status: <span id="a_status"></span></div>
+          <pre id="a_text" class="output-text"></pre>
+          <pre id="a_json" class="output-json"></pre>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Prompt B</h2>
+        <select id="b_model">
+          <option>gpt-4o-mini</option>
+          <option selected>gpt-3.5-turbo</option>
+          <option>gpt-4o</option>
+        </select>
+        <textarea id="b_prompt" placeholder="Enter prompt B"></textarea>
+        <div class="panel-actions">
+          <button id="runB">Run B</button>
+        </div>
+        <div class="result">
+          <div class="status">Status: <span id="b_status"></span></div>
+          <pre id="b_text" class="output-text"></pre>
+          <pre id="b_json" class="output-json"></pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+  </html>

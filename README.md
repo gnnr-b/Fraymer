@@ -1,4 +1,4 @@
-# Prompt Compare — Prompt Testing Bench
+# Frayme — Prompt Testing Bench
 
 Small Electron app to compare prompts and models side-by-side.
 
